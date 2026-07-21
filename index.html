@@ -336,8 +336,8 @@ src="https://www.facebook.com/tr?id=1051864450604425&ev=PageView&noscript=1"
                             <div>
                             <span class="block text-[10px] font-bold text-gray-500 tracking-wider mb-1">PRECIO DE OFERTA</span>
                             <div class="flex items-end gap-2">
-                                <span class="text-2xl font-extrabold text-emerald-600">$12.990</span>
-                                <span class="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">-25% OFF</span>
+                                <span class="text-2xl font-extrabold text-emerald-600">$24.990</span>
+                                <span class="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">50% DESCUENTO</span>
                             </div>
                             </div>
                             <div class="text-right">
@@ -380,17 +380,18 @@ src="https://www.facebook.com/tr?id=1051864450604425&ev=PageView&noscript=1"
                         <div class="mb-5">
                             <span class="block text-[10px] font-bold text-gray-500 tracking-wider mb-2">SELECCIONA TU PROMOCIÓN (ENVÍO GRATIS):</span>
                             <div class="grid grid-cols-2 gap-2" id="promo-selector">
-                            <label onclick="selectPromo(1, '$12.990')" id="label-promo-1" class="relative border-2 border-indigo-600 bg-indigo-50/30 rounded-xl p-2 cursor-pointer flex flex-col items-center justify-center text-center transition-colors">
+                            <label onclick="selectPromo(1, '$24.990')" id="label-promo-1" class="relative border-2 border-indigo-600 bg-indigo-50/30 rounded-xl p-2 cursor-pointer flex flex-col items-center justify-center text-center transition-colors">
                                 <input type="radio" name="promo" value="1" class="hidden" checked>
                                 <span class="block text-xs font-bold text-gray-900 mb-0.5">Llevar 1 Unidad</span>
                                 <span class="block text-[10px] text-gray-500 mb-1">Precio Unitario</span>
-                                <span class="block font-extrabold text-emerald-600 text-base">$12.990</span>
+                                <span class="block font-extrabold text-emerald-600 text-base">$24.990</span>
                             </label>
-                            <label onclick="selectPromo(2, '$19.990')" id="label-promo-2" class="relative border-2 border-gray-100 rounded-xl p-2 cursor-pointer flex flex-col items-center justify-center text-center transition-colors hover:border-indigo-400">
+                            <label onclick="selectPromo(2, '$39.990')" id="label-promo-2" class="relative border-2 border-gray-100 rounded-xl p-2 cursor-pointer flex flex-col items-center justify-center text-center transition-colors hover:border-indigo-400">
                                 <input type="radio" name="promo" value="2" class="hidden">
                                 <span class="block text-xs font-bold text-gray-600 mb-0.5">Llevar 2 Unidades</span>
-                                <span class="block text-[10px] text-indigo-600 font-bold mb-1">Segunda al 50%</span>
-                                <span class="block font-extrabold text-gray-900 text-base">$19.990</span>
+                                <span class="block text-[10px] text-emerald-600 font-bold mb-1">(Ahorra $10.000)</span>
+                                <span class="block font-extrabold text-gray-900 text-base">$39.990</span>
+                                <span class="bg-red-100 text-red-700 text-[10px] font-bold px-2 py-0.5 rounded-full mt-1">60% OFF</span>
                             </label>
                             </div>
                         </div>
@@ -1164,7 +1165,7 @@ src="https://www.facebook.com/tr?id=1051864450604425&ev=PageView&noscript=1"
         }
 
         let selectedUnits = '1 Unidad';
-        let selectedPrice = '$12.990';
+        let selectedPrice = '$24.990';
 
         function selectPromo(units, price) {
             selectedUnits = units === 1 ? '1 Unidad' : '2 Unidades';
@@ -1251,7 +1252,7 @@ src="https://www.facebook.com/tr?id=1051864450604425&ev=PageView&noscript=1"
             const direccionCompleta = document.getElementById('codAddress').value + ' - ' + document.getElementById('codApt').value;
             const regionComuna = regionText + ' / ' + comunaText;
 
-            let priceNum = 12990.0;
+            let priceNum = 24990.0;
             if (typeof selectedPrice === 'string') {
                 priceNum = parseFloat(selectedPrice.replace(/[^0-9]/g, ''));
             } else if (typeof selectedPrice === 'number') {
@@ -1334,7 +1335,7 @@ src="https://www.facebook.com/tr?id=1051864450604425&ev=PageView&noscript=1"
                 <span id="modal-units" class="block text-[10px] text-gray-500 mt-0.5">1 Unidad</span>
             </div>
             <div class="text-right">
-                <span id="modal-price" class="block text-base font-bold text-emerald-600">$12.990</span>
+                <span id="modal-price" class="block text-base font-bold text-emerald-600">$24.990</span>
                 <span class="block text-[9px] text-indigo-600 font-bold uppercase mt-0.5">ENVÍO GRATIS</span>
             </div>
           </div>
