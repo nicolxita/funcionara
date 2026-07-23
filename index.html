@@ -151,9 +151,10 @@ src="https://www.facebook.com/tr?id=1051864450604425&ev=PageView&noscript=1"
 
         <main class="relative z-10">
         <!-- 1. Hero Section -->
-        <section class="container mx-auto px-6 py-12 md:py-20">
-            <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
-                <div class="lg:col-span-6 flex flex-col-reverse md:flex-row gap-4 w-full max-w-[500px] mx-auto lg:ml-auto lg:mr-0 min-w-0">
+        <section class="container mx-auto px-6 pt-6 pb-2 md:pt-12 md:pb-4">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start max-w-6xl mx-auto">
+                <!-- Left Column: Sticky Image Gallery on Desktop -->
+                <div class="lg:col-span-6 flex flex-col-reverse md:flex-row gap-4 w-full max-w-[500px] mx-auto lg:ml-auto lg:mr-0 min-w-0 lg:sticky lg:top-24">
                     <!-- Thumbnails -->
                     <div id="thumbnail-container" class="flex flex-row md:flex-col gap-3 shrink-0 md:w-20 justify-start overflow-x-auto md:overflow-x-visible pb-2 md:pb-0 w-full md:w-auto">
                         <button onclick="changeProductImage(this, 'assets/fotos producto/1.png')" 
@@ -173,8 +174,8 @@ src="https://www.facebook.com/tr?id=1051864450604425&ev=PageView&noscript=1"
                             <img src="assets/fotos producto/4.jpg" class="w-full h-full object-contain">
                         </button>
                     </div>
-                                                            <!-- Main Image (Swipeable Carousel with peek effect) -->
-                    <div id="product-carousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none w-full pb-2 md:pb-0 select-none cursor-grab active:cursor-grabbing px-1">
+                    <!-- Main Image (Swipeable Carousel with min-w-0) -->
+                    <div id="product-carousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none w-full min-w-0 pb-2 md:pb-0 select-none cursor-grab active:cursor-grabbing px-1">
                         <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
                             <img src="assets/fotos producto/1.png" class="w-full h-full object-contain pointer-events-none">
                             <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
@@ -208,221 +209,305 @@ src="https://www.facebook.com/tr?id=1051864450604425&ev=PageView&noscript=1"
                             </div>
                         </div>
                     </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/2.jpg" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/3.jpg" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/4.jpg" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/5.webp" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/2.jpg" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/2.jpg" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/JHEN2_Gemini3_NanoBananaPro__2026-02-16_14-26-53.webp" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/JHEN_2_Gemini_3_Nano_Banana_Pro__2026-02-16_14-29-52.webp" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/JHEN_2_Gemini_3_Nano_Banana_Pro__2026-02-16_14-32-31.webp" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/2.jpg" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/2.jpg" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/4.png" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="w-[88%] md:w-full shrink-0 snap-center aspect-square flex items-center justify-center rounded-2xl overflow-hidden border border-gray-100 bg-white relative group">
-                            <img src="assets/fotos producto/5.png" class="w-full h-full object-contain pointer-events-none">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
-                                <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <!-- Right Column: Product Card & Form -->
                 <div class="lg:col-span-6 w-full min-w-0">
-                    <div class="bg-white rounded-3xl p-5 md:p-6 shadow-xl border border-gray-100 max-w-[500px] w-full mx-auto lg:ml-0 lg:mr-auto">
+                    <div
+                        class="bg-white rounded-3xl p-5 md:p-6 shadow-xl border border-gray-100 max-w-[500px] w-full mx-auto lg:ml-0 lg:mr-auto">
                         <div class="flex items-center gap-3 mb-6">
-                            <div class="flex items-center gap-1.5 text-xs font-bold text-rose-600 bg-rose-50 border border-rose-200 px-2.5 py-0.5 rounded-full w-fit animate-pulse shadow-sm">
-                            <svg class="w-3.5 h-3.5 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" /></svg>
-                            ¡Alta demanda! Solo quedan 14 unidades.
+                            <div
+                                class="flex items-center gap-1.5 text-xs font-bold text-rose-600 bg-rose-50 border border-rose-200 px-2.5 py-0.5 rounded-full w-fit animate-pulse shadow-sm">
+                                <svg class="w-3.5 h-3.5 text-rose-600" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                                </svg>
+                                ¡Alta demanda! Solo quedan 14 unidades.
                             </div>
                         </div>
                         <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight tracking-tight mb-2">Pizarra mágica LED para niños - creatividad, imaginación y aprendizaje 🌈</h1>
-                        <a href="#reviews" class="flex items-center gap-2 mb-5 text-xs text-gray-600 hover:text-indigo-600 transition-colors cursor-pointer w-fit group">
+                        <a href="#reviews"
+                            class="flex items-center gap-2 mb-5 text-xs text-gray-600 hover:text-indigo-600 transition-colors cursor-pointer w-fit group flex-wrap">
                             <div class="flex text-amber-400 text-base">★★★★★</div>
-                            <span class="font-medium underline decoration-gray-300 underline-offset-2 group-hover:decoration-indigo-400 transition-colors">(47 valoraciones)</span>
+                            <span class="font-semibold text-gray-800">4.9/5.0</span>
+                            <span
+                                class="font-medium underline decoration-gray-300 underline-offset-2 group-hover:decoration-indigo-400 transition-colors">(47
+                                valoraciones)</span>
+                            <span class="text-gray-300 font-light">|</span>
+                            <span class="flex items-center gap-1 text-gray-500 no-underline font-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <span><strong class="text-gray-700">249+</strong> han comprado</span>
+                            </span>
                         </a>
-                        <div class="bg-gray-50 rounded-2xl p-3 flex justify-between items-center mb-5 border border-gray-100">
-                            <div>
-                            <span class="block text-[10px] font-bold text-gray-500 tracking-wider mb-1">PRECIO DE OFERTA</span>
-                            <div class="flex items-end gap-2">
-                                <span class="text-2xl font-extrabold text-emerald-600">$24.990</span>
-                                <span class="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">50% DESCUENTO</span>
-                            </div>
-                            </div>
-                            <div class="text-right">
-                            <span class="block text-[10px] font-bold text-gray-500 tracking-wider mb-1">NORMAL</span>
-                            <span class="text-lg font-bold text-gray-400 line-through">$31.990</span>
-                            </div>
-                        </div>
-                        
+
+
                         <ul class="flex flex-col gap-3 mb-5 mt-5">
-                            
+
                             <li class="flex items-center gap-2.5">
-                                <div class="w-5 h-5 rounded-full bg-[#adf5d7] flex items-center justify-center shrink-0 shadow-sm">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                                <div
+                                    class="w-5 h-5 rounded-full bg-[#adf5d7] flex items-center justify-center shrink-0 shadow-sm">
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" stroke-width="3.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
                                 </div>
                                 <div class="text-[14px] font-bold text-gray-900 line-clamp-1">
                                     Estimula creatividad artística e imaginación
                                 </div>
                             </li>
-                            
+
                             <li class="flex items-center gap-2.5">
-                                <div class="w-5 h-5 rounded-full bg-[#adf5d7] flex items-center justify-center shrink-0 shadow-sm">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                                <div
+                                    class="w-5 h-5 rounded-full bg-[#adf5d7] flex items-center justify-center shrink-0 shadow-sm">
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" stroke-width="3.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
                                 </div>
                                 <div class="text-[14px] font-bold text-gray-900 line-clamp-1">
                                     Ayuda a la coordinación motora de agarre de lapíz
                                 </div>
                             </li>
-                            
+
                             <li class="flex items-center gap-2.5">
-                                <div class="w-5 h-5 rounded-full bg-[#adf5d7] flex items-center justify-center shrink-0 shadow-sm">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                                <div
+                                    class="w-5 h-5 rounded-full bg-[#adf5d7] flex items-center justify-center shrink-0 shadow-sm">
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" stroke-width="3.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
                                 </div>
                                 <div class="text-[14px] font-bold text-gray-900 line-clamp-1">
                                     Respetuoso con el medio ambiente y reutilizable
                                 </div>
                             </li>
-                            
+
                         </ul>
 
-                        <div class="mb-5">
-                            <span class="block text-[10px] font-bold text-gray-500 tracking-wider mb-2">SELECCIONA TU PROMOCIÓN (ENVÍO GRATIS):</span>
-                            <div class="grid grid-cols-2 gap-2" id="promo-selector">
-                            <label onclick="selectPromo(1, '$24.990')" id="label-promo-1" class="relative border-2 border-indigo-600 bg-indigo-50/30 rounded-xl p-2 cursor-pointer flex flex-col items-center justify-center text-center transition-colors">
-                                <input type="radio" name="promo" value="1" class="hidden" checked>
-                                <span class="block text-xs font-bold text-gray-900 mb-0.5">Llevar 1 Unidad</span>
-                                <span class="block text-[10px] text-gray-500 mb-1">Precio Unitario</span>
-                                <span class="block text-[10px] text-gray-400 line-through font-bold mb-0.5">$49.980</span>
-                                <span class="block font-extrabold text-emerald-600 text-base">$24.990</span>
-                            </label>
-                            <label onclick="selectPromo(2, '$39.990')" id="label-promo-2" class="relative border-2 border-gray-100 rounded-xl p-2 cursor-pointer flex flex-col items-center justify-center text-center transition-colors hover:border-indigo-400">
-                                <input type="radio" name="promo" value="2" class="hidden">
-                                <span class="block text-xs font-bold text-gray-600 mb-0.5">Llevar 2 Unidades</span>
-                                <span class="block text-[10px] text-emerald-600 font-bold mb-1">(Ahorra $10.000)</span>
-                                <span class="block text-[10px] text-gray-400 line-through font-bold mb-0.5">$99.980</span>
-                                <span class="block font-extrabold text-gray-900 text-base">$39.990</span>
-                                <span class="bg-red-100 text-red-700 text-[10px] font-bold px-2 py-0.5 rounded-full mt-1">60% OFF</span>
-                            </label>
+                        <div id="checkout-section" class="border-t border-gray-100 pt-6 mt-6">
+                            <h3 class="text-center text-lg md:text-xl font-black text-emerald-700 flex items-center justify-center gap-1.5 mb-1 animate-pulse">
+                                ¡Ordena y Paga al Recibir!
+                            </h3>
+                            <p class="text-center text-xs text-gray-600 mb-5 leading-normal max-w-xs mx-auto font-bold">
+                                Nuestros despachadores se comunicarán contigo a la hora de realizar la entrega
+                            </p>
+
+                            <!-- Vertical Promos (Screenshot 1) -->
+                            <div class="space-y-3 mb-4" id="promo-selector-vertical">
+                                <!-- Promo 1 -->
+                                <label onclick="selectPromo(1, 24990); event.preventDefault();" id="label-promo-1" 
+                                    class="relative flex items-center justify-between border border-gray-200 rounded-2xl p-3.5 cursor-pointer bg-white transition-all shadow-sm select-none hover:border-emerald-300">
+                                    <input type="radio" name="promo" value="1" class="hidden">
+                                    <div class="flex items-center gap-3">
+                                        <img src="assets/fotos producto/1.png" alt="1 Unidad" class="w-12 h-12 rounded-xl object-contain bg-gray-50 border border-gray-100 p-0.5">
+                                        <div class="text-left">
+                                            <span class="block text-xs font-bold text-gray-900 leading-tight">Lleva 1 Unidad</span>
+                                            <span class="block text-[11px] font-semibold text-gray-500 mb-1">"OFERTA EXCLUSIVA"</span>
+                                            <span class="inline-block bg-red-600 text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full tracking-wider uppercase">50% DE DESCUENTO</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="block text-xs text-gray-400 line-through font-bold leading-none mb-0.5">$49.980</span>
+                                        <span class="block font-black text-gray-900 text-lg">$24.990</span>
+                                    </div>
+                                </label>
+
+                                <!-- Promo 2 (Default Selected) -->
+                                <label onclick="selectPromo(2, 39990); event.preventDefault();" id="label-promo-2" 
+                                    class="relative flex items-center justify-between border-2 border-emerald-500 rounded-2xl p-3.5 cursor-pointer bg-emerald-50/40 transition-all shadow-sm select-none hover:border-emerald-500">
+                                    <input type="radio" name="promo" value="2" class="hidden" checked>
+                                    <div class="flex items-center gap-3">
+                                        <img src="assets/fotos producto/2.jpg" alt="2 Unidades" class="w-12 h-12 rounded-xl object-contain bg-gray-50 border border-gray-100 p-0.5">
+                                        <div class="text-left">
+                                            <span class="block text-xs font-bold text-gray-900 leading-tight">Lleva 2 Unidades</span>
+                                            <span class="block text-[11px] font-semibold text-gray-500 mb-1">"MÁS VENDIDO" - (Ahorra $10.000)</span>
+                                            <span class="inline-block bg-red-600 text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full tracking-wider uppercase">60% DE DESCUENTO</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="block text-xs text-gray-400 line-through font-bold leading-none mb-0.5">$99.980</span>
+                                        <span class="block font-black text-emerald-700 text-lg">$39.990</span>
+                                    </div>
+                                </label>
                             </div>
+
+                            <!-- Order Bump (Envío Express) (Screenshot 1) -->
+                            <div id="express-bump-card" class="bg-sky-50 text-sky-900 border border-sky-200 rounded-2xl p-3.5 mb-4 flex gap-3 items-center select-none cursor-pointer" onclick="toggleExpressShipping()">
+                                <input type="checkbox" id="express-bump" class="w-4 h-4 text-sky-600 rounded border-gray-300 focus:ring-sky-500 cursor-pointer" onclick="event.stopPropagation(); updatePrices();">
+                                <p class="text-xs font-medium leading-tight text-left">
+                                    Agrega <strong class="font-extrabold text-sky-950">Envío Express + Garantía Extendida</strong> por tan solo <strong class="font-black text-sky-700">$1.990</strong>
+                                </p>
+                            </div>
+
+                            <!-- Pricing Summary Box (Screenshot 1) -->
+                            <div class="bg-gray-50 rounded-2xl p-4 mb-4 border border-gray-200/50 text-xs">
+                                <div class="flex justify-between items-center mb-2 text-gray-600">
+                                    <span>Subtotal</span>
+                                    <span id="summary-subtotal" class="font-semibold">$99.980</span>
+                                </div>
+                                <div class="flex justify-between items-center mb-2 text-gray-600">
+                                    <span>Envío</span>
+                                    <span class="text-emerald-600 font-bold uppercase tracking-wider text-[10px]">Gratis</span>
+                                </div>
+                                <div class="flex justify-between items-center mb-2 text-gray-600">
+                                    <span>Descuentos 🏷️</span>
+                                    <span id="summary-discount" class="text-red-500 font-bold">- $59.990</span>
+                                </div>
+                                <div id="summary-express-row" class="flex justify-between items-center mb-2 text-gray-600 hidden">
+                                    <span>Envío Express 🚀</span>
+                                    <span class="font-semibold">$1.990</span>
+                                </div>
+                                <hr class="border-gray-200 my-2">
+                                <div class="flex justify-between items-center text-sm text-gray-900 font-black">
+                                    <span>Total</span>
+                                    <span id="summary-total" class="text-base text-gray-900">$39.990</span>
+                                </div>
+                            </div>
+
+                            <!-- Embedded Form (Screenshot 2) -->
+                            <form id="codForm" onsubmit="submitCODOrder(event)" class="space-y-3.5 mt-6 text-left">
+                                <!-- Nombre -->
+                                <div>
+                                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Nombre</label>
+                                    <input type="text" id="codName" required 
+                                        class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors shadow-sm"
+                                        placeholder="Juan Pérez"
+                                        oninput="this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '')">
+                                </div>
+
+                                <!-- WhatsApp -->
+                                <div>
+                                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Teléfono (WhatsApp)</label>
+                                    <input type="tel" id="codPhone" required 
+                                        class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors shadow-sm"
+                                        placeholder="+56" value="+56 "
+                                        oninput="let v = this.value; if(!v.startsWith('+56 ')) { this.value = '+56 '; return; } let num = v.substring(4).replace(/[^0-9]/g, ''); this.value = '+56 ' + num;">
+                                    <p id="phoneError" class="text-red-500 text-[10px] mt-1 hidden">Ingresa un número válido y real.</p>
+                                </div>
+
+                                <!-- Dirección -->
+                                <div>
+                                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Dirección (Calle, Número, Depto)</label>
+                                    <input type="text" id="codAddress" required 
+                                        class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors shadow-sm"
+                                        placeholder="Ej: Av. Vitacura 1234, Depto 501">
+                                </div>
+
+                                <!-- Comuna / Ciudad -->
+                                <div>
+                                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Comuna / Ciudad *</label>
+                                    <div class="relative" id="comuna-container">
+                                        <input type="text" id="comuna" required 
+                                            class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors shadow-sm"
+                                            placeholder="Escribe tu comuna (ej: Providencia...)" autocomplete="off">
+                                        <div id="comuna-suggestions" class="absolute left-0 right-0 top-full mt-1 bg-white border border-gray-200 rounded-xl shadow-xl max-h-60 overflow-y-auto hidden z-[999999]"></div>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit"
+                                    class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-extrabold py-3.5 px-4 rounded-xl text-base transition-transform transform active:scale-95 shadow-xl shadow-emerald-700/20 flex flex-col items-center justify-center gap-0.5 mt-4 animate-attention">
+                                    <div class="flex items-center justify-center gap-2">
+                                        <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                        <span>COMPRA AHORA - <span id="btn-price-display">$39.990</span></span>
+                                    </div>
+                                    <span class="text-[10px] opacity-90 font-medium uppercase tracking-wider">Paga al Recibir</span>
+                                </button>
+                            </form>
+
+                            <!-- Trust Badges (Gold Theme) (Screenshot 3) -->
+                            <div class="grid grid-cols-3 gap-2 mt-6">
+                                <div class="flex flex-col items-center text-center p-2">
+                                    <svg class="w-10 h-10 text-amber-500 mb-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="rgba(245, 158, 11, 0.05)"/>
+                                        <path d="M9 11v6m6-6v6M9 9h6M8 6h8a2 2 0 012 2v2H6V8a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    <span class="text-[9px] font-bold text-gray-700 leading-tight">Envío Gratis</span>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-2">
+                                    <svg class="w-10 h-10 text-amber-500 mb-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" fill="rgba(245, 158, 11, 0.05)" stroke-linejoin="round"/>
+                                        <path d="M9 11l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span class="text-[9px] font-bold text-gray-700 leading-tight">100% Seguro</span>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-2">
+                                    <svg class="w-10 h-10 text-amber-500 mb-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="rgba(245, 158, 11, 0.05)"/>
+                                        <path d="M8.5 12.5l2 2 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span class="text-[9px] font-bold text-gray-700 leading-tight">Garantía Calidad</span>
+                                </div>
+                            </div>
+
+                            <!-- Menú Desplegable de Información (Accordion) -->
+                            <div class="mt-6 border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm">
+                                <!-- Item 2: Características del Producto -->
+                                <div class="border-b border-gray-100 last:border-0">
+                                    <button type="button" onclick="toggleAccordion('acc-ing')" class="w-full flex justify-between items-center px-4 py-3.5 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors text-sm">
+                                        <span>Características de la pizarra</span>
+                                        <svg id="arrow-acc-ing" class="w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                    </button>
+                                    <div id="acc-ing" class="hidden px-4 pb-4 pt-1 text-xs text-gray-700 leading-relaxed">
+                                        Pizarra de acrílico transparente y ultra resistente está pensada para los más pequeños: bordes redondeados, material no tóxico y totalmente segura para sus manos.
+                                    </div>
+                                </div>
+
+                                <!-- Item 3: Cómo se usa -->
+                                <div class="border-b border-gray-100 last:border-0">
+                                    <button type="button" onclick="toggleAccordion('acc-use')" class="w-full flex justify-between items-center px-4 py-3.5 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors text-sm">
+                                        <span>¿Qué incluye mi compra?</span>
+                                        <svg id="arrow-acc-use" class="w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                    </button>
+                                    <div id="acc-use" class="hidden px-4 pb-4 pt-1.5 text-xs text-gray-700 leading-relaxed space-y-1">
+                                        1 Pizarra LED Acrílica Transparente<br>
+                                        1 Base soporte con iluminación LED<br>
+                                        7 Plumones de colores<br>
+                                        1 Paño de microfibra<br>
+                                        1 Cable USB de alimentación
+                                    </div>
+                                </div>
+
+                                <!-- Item 4: Envíos -->
+                                <div class="border-b border-gray-100 last:border-0">
+                                    <button type="button" onclick="toggleAccordion('acc-ship')" class="w-full flex justify-between items-center px-4 py-3.5 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors text-sm">
+                                        <span>Envíos</span>
+                                        <svg id="arrow-acc-ship" class="w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                    </button>
+                                    <div id="acc-ship" class="hidden px-4 pb-4 pt-1 text-xs text-gray-700 leading-relaxed space-y-2">
+                                        <p><strong>Santiago (RM):</strong> Entrega rápida en 24 a 48 horas hábiles.</p>
+                                        <p><strong>Regiones:</strong> Entrega en 3 a 5 días hábiles a través de nuestros couriers asociados (Bluexpress, Starken).</p>
+                                        <p><strong>Pago Contra Entrega:</strong> Sin riesgos. Pagas tu pedido en efectivo o transferencia solo cuando el repartidor te lo entregue en la puerta de tu casa.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item 5: Garantías -->
+                                <div class="border-b border-gray-100 last:border-0">
+                                    <button type="button" onclick="toggleAccordion('acc-guar')" class="w-full flex justify-between items-center px-4 py-3.5 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors text-sm">
+                                        <span>Garantías</span>
+                                        <svg id="arrow-acc-guar" class="w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                    </button>
+                                    <div id="acc-guar" class="hidden px-4 pb-4 pt-1 text-xs text-gray-700 leading-relaxed space-y-2">
+                                        <p><strong>Nuestro compromiso:</strong> En Mundo Aura buscamos que cada cliente tenga una experiencia de compra satisfactoria. Si tu pedido presenta algún inconveniente, estaremos disponibles para ayudarte.</p>
+                                        <p><strong>Productos dañados o incorrectos:</strong> Si el producto recibido presenta fallas o no es el solicitado, debes contactarnos dentro de las primeras 48 horas para coordinar la reposición sin costo adicional.</p>
+                                        <p><strong>Garantía legal:</strong> Todos nuestros clientes cuentan con el respaldo de la Ley N.º 19.496 sobre Protección de los Derechos de los Consumidores en Chile.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+
                         </div>
-                        <button onclick="document.getElementById('checkoutModal').classList.remove('hidden')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold py-3 px-4 rounded-xl text-base transition-transform transform hover:scale-[1.02] active:scale-95 shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-2 mb-3">
-                            COMPRAR AHORA - PAGO EN CASA
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                        </button>
-                        <div class="bg-indigo-50/50 text-indigo-900 text-[10px] font-medium text-center p-2 rounded-lg border border-indigo-100 mb-3">
-                            Envío Gratis asegurado: Recíbelo en <strong class="font-bold">24 a 48 horas en RM</strong> y de <strong class="font-bold">3 a 5 días en regiones</strong>.
-                        </div>
-                        <div class="flex justify-center items-center gap-3 text-[10px] font-medium text-gray-500">
-                            <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                            Compra 100% Segura
-                            </span>
-                            <span>•</span>
-                            <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V6a3 3 0 0 1 6 0v5"/><rect width="14" height="10" x="5" y="11" rx="2" ry="2"/></svg>
-                            Paga Contra Entrega
-                            </span>
-                        </div>
-                        <div class="text-center text-xs font-bold text-gray-700 mt-3 bg-indigo-50/50 text-indigo-900 border-indigo-100 p-2.5 rounded-lg border shadow-sm shadow-sm flex items-center justify-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-600"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                            Producto 100% Regulado - Con Registro ISP y Resolución SEREMI de Salud
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
-        </section>
+        
+            </div></section>
 
         <!-- Benefits Section (Problem / Solution Block) -->
         <section class="bg-gray-50 pt-2 pb-6 border-t border-b border-gray-100/80">
